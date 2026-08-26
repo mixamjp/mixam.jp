@@ -20,56 +20,81 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="container header-inner">
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
 
-            <a
-                class="site-title"
-                href="./"
-            >
-                Mixam Japan Archive
-            </a>
+    <header class="site-header">
+
+        <div class="header-main">
+
+            <div class="container header-inner">
+
+                <a class="mixam-logo" href="./" aria-label="Mixam Japan Archive">
+                    <span class="logo-mix">mix</span><span class="logo-am">am</span>
+                </a>
+
+                <div class="header-tagline">
+                    the smart way to print
+                </div>
+
+            </div>
 
         </div>
+
+        <nav class="site-nav" aria-label="メインナビゲーション">
+
+            <div class="container nav-inner">
+
+                <a href="#articles">記事</a>
+                <a href="#archive-notice">アーカイブについて</a>
+
+            </div>
+
+        </nav>
+
     </header>
 
 
     <main>
 
-        <!-- Archive introduction -->
-        <section class="archive-intro">
+        <!-- =================================================
+             HERO
+             ================================================= -->
 
-            <div class="container">
+        <section class="hero">
 
-                <p class="archive-label">
-                    ARCHIVE
-                </p>
+            <div class="container hero-inner">
 
-                <h1>
-                    Mixam Japanの記事アーカイブ
-                </h1>
+                <div class="hero-copy">
 
-                <p class="archive-description">
-                    Mixam Japanで公開されていた、
-                    印刷や自主制作に関する記事をアーカイブしています。
-                </p>
-
-                <div class="archive-notice">
-
-                    <p class="archive-notice-title">
-                        アーカイブについて
+                    <p class="eyebrow">
+                        MIXAM JAPAN / ARCHIVE
                     </p>
 
-                    <p>
-                        本サイトは、Mixam Japanで過去に公開されていた
-                        非取引・非個人情報コンテンツを、
-                        アーカイブおよび参考目的で保存・公開するものです。
+                    <h1>
+                        印刷をもっと<br>
+                        <span>スマートに。</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Mixam Japanで公開されていた、
+                        印刷や自主制作に関する記事をアーカイブしています。
                     </p>
 
-                    <p>
-                        Mixam Japanの現在のサービス、商品、価格、
-                        注文方法、その他の営業情報を提供するものではありません。
-                    </p>
+                    <a class="hero-button" href="#articles">
+                        記事を見る
+                        <span aria-hidden="true">↓</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-shape" aria-hidden="true">
+
+                    <div class="shape-card shape-card-one"></div>
+                    <div class="shape-card shape-card-two"></div>
+                    <div class="shape-circle"></div>
+                    <div class="shape-line"></div>
 
                 </div>
 
@@ -78,19 +103,84 @@
         </section>
 
 
-        <!-- Article list -->
-        <section class="articles">
+        <!-- =================================================
+             ARCHIVE NOTICE
+             ================================================= -->
+
+        <section class="archive-notice-section" id="archive-notice">
 
             <div class="container">
 
-                <h2>
-                    記事
-                </h2>
+                <div class="archive-notice">
+
+                    <div class="notice-icon" aria-hidden="true">
+                        i
+                    </div>
+
+                    <div class="notice-content">
+
+                        <p class="notice-label">
+                            ARCHIVE NOTICE
+                        </p>
+
+                        <h2>
+                            このサイトについて
+                        </h2>
+
+                        <p>
+                            本サイトは、Mixam Japanで過去に公開されていた
+                            非取引・非個人情報コンテンツを、
+                            アーカイブおよび参考目的で保存・公開するものです。
+                        </p>
+
+                        <p>
+                            Mixam Japanの現在のサービス、商品、価格、
+                            注文方法、その他の営業情報を提供するものではありません。
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ARTICLES
+             ================================================= -->
+
+        <section class="articles" id="articles">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-label">
+                            EXPLORE
+                        </p>
+
+                        <h2>
+                            印刷・自主制作の記事
+                        </h2>
+                    </div>
+
+                    <p class="section-introduction">
+                        本を作る、マンガを印刷する、
+                        自分だけの雑誌を発行する。
+                        そんな制作に役立つ記事をまとめています。
+                    </p>
+
+                </div>
+
 
                 <div class="article-list">
 
 
                     <!-- Article 1 -->
+
                     <article class="article-card">
 
                         <a
@@ -98,13 +188,21 @@
                             class="article-card-link"
                         >
 
+                            <div class="article-card-visual visual-yellow">
+                                <span>01</span>
+                            </div>
+
                             <div class="article-card-content">
+
+                                <p class="article-category">
+                                    BOOKS / PRINT
+                                </p>
 
                                 <h3>
                                     料理本の作り方ガイド〜レシピのレイアウトや印刷方法を徹底解説
                                 </h3>
 
-                                <p>
+                                <p class="article-description">
                                     料理本を制作する際のレシピのレイアウトや
                                     印刷方法について詳しく解説します。
                                 </p>
@@ -122,6 +220,7 @@
 
 
                     <!-- Article 2 -->
+
                     <article class="article-card">
 
                         <a
@@ -129,13 +228,21 @@
                             class="article-card-link"
                         >
 
+                            <div class="article-card-visual visual-teal">
+                                <span>02</span>
+                            </div>
+
                             <div class="article-card-content">
+
+                                <p class="article-category">
+                                    MANGA / PRINT
+                                </p>
 
                                 <h3>
                                     マンガの作り方ガイド〜ストーリー構築から印刷まで
                                 </h3>
 
-                                <p>
+                                <p class="article-description">
                                     マンガのストーリー構築から制作、
                                     印刷までの流れについて解説します。
                                 </p>
@@ -153,6 +260,7 @@
 
 
                     <!-- Article 3 -->
+
                     <article class="article-card">
 
                         <a
@@ -160,13 +268,21 @@
                             class="article-card-link"
                         >
 
+                            <div class="article-card-visual visual-blue">
+                                <span>03</span>
+                            </div>
+
                             <div class="article-card-content">
+
+                                <p class="article-category">
+                                    MAGAZINE / DIY
+                                </p>
 
                                 <h3>
                                     雑誌の作り方ガイド〜自分だけの「インディペンデントマガジン」を創刊しよう
                                 </h3>
 
-                                <p>
+                                <p class="article-description">
                                     自分だけのインディペンデントマガジンを
                                     制作・発行するための方法を紹介します。
                                 </p>
@@ -184,6 +300,7 @@
 
 
                     <!-- Article 4 -->
+
                     <article class="article-card">
 
                         <a
@@ -191,13 +308,21 @@
                             class="article-card-link"
                         >
 
+                            <div class="article-card-visual visual-coral">
+                                <span>04</span>
+                            </div>
+
                             <div class="article-card-content">
+
+                                <p class="article-category">
+                                    DOJINSHI / DIY
+                                </p>
 
                                 <h3>
                                     同人誌とは？〜自分だけの一冊を創る、DIY出版文化の世界
                                 </h3>
 
-                                <p>
+                                <p class="article-description">
                                     同人誌の文化や、自分だけの一冊を作る
                                     DIY出版について紹介します。
                                 </p>
@@ -213,7 +338,6 @@
 
                     </article>
 
-
                 </div>
 
             </div>
@@ -223,23 +347,42 @@
     </main>
 
 
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
     <footer class="site-footer">
 
-        <div class="container">
+        <div class="container footer-inner">
 
-            <p class="footer-title">
-                Mixam Japan Archive
-            </p>
+            <div class="footer-brand">
 
-            <p class="footer-note">
-                本サイトは、Mixam Japanで過去に公開されていた
-                コンテンツのアーカイブ・参考目的で提供されています。
-            </p>
+                <div class="mixam-logo footer-logo">
+                    <span class="logo-mix">mix</span><span class="logo-am">am</span>
+                </div>
+
+                <p>
+                    the smart way to print
+                </p>
+
+            </div>
+
+            <div class="footer-note">
+
+                <p>
+                    Mixam Japan Archive
+                </p>
+
+                <p>
+                    本サイトは、Mixam Japanで過去に公開されていた
+                    コンテンツのアーカイブ・参考目的で提供されています。
+                </p>
+
+            </div>
 
         </div>
 
     </footer>
-
 
 </body>
 </html>
