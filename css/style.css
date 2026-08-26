@@ -1,6 +1,5 @@
 /* =========================================================
    Mixam Japan Archive
-   Mixam-inspired visual system
    ========================================================= */
 
 
@@ -118,9 +117,6 @@ select {
     background: #ffffff;
 }
 
-
-/* Main header */
-
 .header-main {
     border-bottom: 1px solid #eeeeee;
 }
@@ -135,17 +131,34 @@ select {
 
 
 /* =========================================================
-   MIXAM LOGO
+   LOGO
    ========================================================= */
 
+/*
+   The logo container has a fixed physical size.
+   This prevents the source image from expanding the header.
+*/
+
 .mixam-logo {
-    display: inline-flex;
-    align-items: center;
+    display: block;
 
-    width: 145px;
-    height: 42px;
+    width: 110px;
+    height: 32px;
 
-    flex-shrink: 0;
+    min-width: 110px;
+    max-width: 110px;
+
+    min-height: 32px;
+    max-height: 32px;
+
+    flex: 0 0 110px;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 0;
+
+    overflow: hidden;
 
     text-decoration: none;
 }
@@ -153,18 +166,26 @@ select {
 .mixam-logo img {
     display: block;
 
-    width: 145px;
-    height: auto;
+    width: 110px;
+    height: 32px;
 
-    max-width: 100%;
-    max-height: 42px;
+    min-width: 0;
+    max-width: 110px;
+
+    min-height: 0;
+    max-height: 32px;
+
+    margin: 0;
+    padding: 0;
 
     object-fit: contain;
     object-position: left center;
 }
 
 
-/* Header tagline */
+/* =========================================================
+   HEADER TAGLINE
+   ========================================================= */
 
 .header-tagline {
     color: #888888;
@@ -487,9 +508,6 @@ select {
     border: 1px solid #e3e6e4;
 }
 
-
-/* Info icon */
-
 .notice-icon {
     flex: 0 0 auto;
 
@@ -511,9 +529,6 @@ select {
     font-size: 1.05rem;
     font-weight: 700;
 }
-
-
-/* Notice content */
 
 .notice-content {
     max-width: 850px;
@@ -561,9 +576,6 @@ select {
 
     background: #ffffff;
 }
-
-
-/* Section heading */
 
 .section-heading {
     display: flex;
@@ -628,9 +640,6 @@ select {
     gap: 26px;
 }
 
-
-/* Card */
-
 .article-card {
     overflow: hidden;
 
@@ -656,9 +665,6 @@ select {
 
     box-shadow: var(--shadow-hover);
 }
-
-
-/* Card link */
 
 .article-card-link {
     display: block;
@@ -885,9 +891,6 @@ select {
     font-size: 0.9rem;
     line-height: 1.75;
 }
-
-
-/* Read more */
 
 .read-more {
     display: inline-flex;
@@ -1135,18 +1138,34 @@ select {
 }
 
 .footer-logo {
-    width: 125px;
-    height: 36px;
+    width: 100px;
+    height: 29px;
+
+    min-width: 100px;
+    max-width: 100px;
+
+    min-height: 29px;
+    max-height: 29px;
+
+    flex: 0 0 100px;
+
+    overflow: hidden;
 }
 
 .footer-logo img {
     display: block;
 
-    width: 125px;
-    height: auto;
+    width: 100px;
+    height: 29px;
 
-    max-width: 100%;
-    max-height: 36px;
+    min-width: 0;
+    max-width: 100px;
+
+    min-height: 0;
+    max-height: 29px;
+
+    margin: 0;
+    padding: 0;
 
     object-fit: contain;
     object-position: left center;
@@ -1258,13 +1277,24 @@ a:focus-visible {
     }
 
     .mixam-logo {
-        width: 120px;
-        height: 35px;
+        width: 90px;
+        height: 27px;
+
+        min-width: 90px;
+        max-width: 90px;
+
+        min-height: 27px;
+        max-height: 27px;
+
+        flex-basis: 90px;
     }
 
     .mixam-logo img {
-        width: 120px;
-        max-height: 35px;
+        width: 90px;
+        height: 27px;
+
+        max-width: 90px;
+        max-height: 27px;
     }
 
     .header-tagline {
@@ -1391,12 +1421,23 @@ a:focus-visible {
     }
 
     .footer-logo {
-        width: 110px;
-        height: 32px;
+        width: 90px;
+        height: 27px;
+
+        min-width: 90px;
+        max-width: 90px;
+
+        min-height: 27px;
+        max-height: 27px;
+
+        flex-basis: 90px;
     }
 
     .footer-logo img {
-        width: 110px;
-        max-height: 32px;
+        width: 90px;
+        height: 27px;
+
+        max-width: 90px;
+        max-height: 27px;
     }
 }
