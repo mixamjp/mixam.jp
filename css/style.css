@@ -9,7 +9,6 @@
    ========================================================= */
 
 :root {
-
     --mixam-teal: #65c9c2;
     --mixam-teal-dark: #168b94;
     --mixam-teal-deep: #087b86;
@@ -38,7 +37,6 @@
 
     --shadow-hover:
         0 16px 42px rgba(0, 0, 0, 0.13);
-
 }
 
 
@@ -136,36 +134,37 @@ select {
 }
 
 
-/* Mixam-style logo */
+/* =========================================================
+   MIXAM LOGO
+   ========================================================= */
 
 .mixam-logo {
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
 
-    color: #666666;
+    width: 145px;
+    height: 42px;
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    font-size: 2.45rem;
-    font-weight: 700;
-
-    line-height: 1;
-
-    letter-spacing: -0.09em;
+    flex-shrink: 0;
 
     text-decoration: none;
 }
 
-.logo-mix {
-    color: #6b6b6b;
+.mixam-logo img {
+    display: block;
+
+    width: 145px;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 42px;
+
+    object-fit: contain;
+    object-position: left center;
 }
 
-.logo-am {
-    color: var(--mixam-teal);
-}
+
+/* Header tagline */
 
 .header-tagline {
     color: #888888;
@@ -177,7 +176,9 @@ select {
 }
 
 
-/* Navigation */
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 
 .site-nav {
     background: #ffffff;
@@ -368,7 +369,9 @@ select {
 }
 
 
-/* Abstract Mixam-style graphic */
+/* =========================================================
+   HERO GRAPHIC
+   ========================================================= */
 
 .hero-shape {
     position: absolute;
@@ -399,8 +402,8 @@ select {
     background:
         linear-gradient(
             135deg,
-            rgba(255,255,255,0.94),
-            rgba(255,255,255,0.68)
+            rgba(255, 255, 255, 0.94),
+            rgba(255, 255, 255, 0.68)
         );
 
     transform:
@@ -417,8 +420,8 @@ select {
     background:
         linear-gradient(
             135deg,
-            rgba(245,197,66,0.96),
-            rgba(239,128,118,0.9)
+            rgba(245, 197, 66, 0.96),
+            rgba(239, 128, 118, 0.9)
         );
 
     transform:
@@ -668,7 +671,9 @@ select {
 }
 
 
-/* Card visual */
+/* =========================================================
+   ARTICLE CARD VISUALS
+   ========================================================= */
 
 .article-card-visual {
     position: relative;
@@ -703,7 +708,7 @@ select {
     right: 35px;
     top: -75px;
 
-    background: rgba(255,255,255,0.34);
+    background: rgba(255, 255, 255, 0.34);
 }
 
 .visual-yellow::after {
@@ -713,7 +718,7 @@ select {
     left: 60px;
     bottom: -35px;
 
-    background: rgba(255,255,255,0.24);
+    background: rgba(255, 255, 255, 0.24);
 }
 
 
@@ -733,7 +738,7 @@ select {
     right: -60px;
     top: -80px;
 
-    border: 28px solid rgba(255,255,255,0.18);
+    border: 28px solid rgba(255, 255, 255, 0.18);
 }
 
 .visual-teal::after {
@@ -743,7 +748,7 @@ select {
     left: 55px;
     top: 38px;
 
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -765,9 +770,10 @@ select {
 
     border-radius: 8px;
 
-    background: rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.25);
 
-    transform: rotate(15deg);
+    transform:
+        rotate(15deg);
 }
 
 .visual-blue::after {
@@ -777,7 +783,7 @@ select {
     left: 45px;
     top: 55px;
 
-    background: rgba(245,197,66,0.9);
+    background: rgba(245, 197, 66, 0.9);
 }
 
 
@@ -797,7 +803,7 @@ select {
     right: -50px;
     top: -60px;
 
-    background: rgba(255,255,255,0.18);
+    background: rgba(255, 255, 255, 0.18);
 }
 
 .visual-coral::after {
@@ -821,7 +827,7 @@ select {
 
     z-index: 2;
 
-    color: rgba(255,255,255,0.94);
+    color: rgba(255, 255, 255, 0.94);
 
     font-family:
         Arial,
@@ -837,7 +843,9 @@ select {
 }
 
 
-/* Card content */
+/* =========================================================
+   ARTICLE CARD CONTENT
+   ========================================================= */
 
 .article-card-content {
     padding: 26px 27px 29px;
@@ -909,7 +917,6 @@ select {
 
 /* =========================================================
    ARTICLE PAGES
-   These classes remain available for the existing articles.
    ========================================================= */
 
 .article-page {
@@ -1056,21 +1063,22 @@ select {
 
     border-left: 5px solid var(--mixam-teal);
 
-    border-radius: 0 var(--radius-small) var(--radius-small) 0;
+    border-radius:
+        0 var(--radius-small)
+        var(--radius-small) 0;
 }
 
 .article-content a {
     color: var(--mixam-teal-dark);
 
-    text-decoration:
-        underline;
+    text-decoration: underline;
 
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
 }
 
 
-/* Back */
+/* Back to archive */
 
 .back-to-archive {
     max-width: 800px;
@@ -1082,6 +1090,7 @@ select {
 .back-to-archive a {
     display: inline-flex;
     align-items: center;
+
     gap: 7px;
 
     color: var(--mixam-teal-dark);
@@ -1118,12 +1127,29 @@ select {
     gap: 50px;
 }
 
+
+/* Footer logo */
+
 .footer-brand {
     flex: 0 0 auto;
 }
 
 .footer-logo {
-    font-size: 2rem;
+    width: 125px;
+    height: 36px;
+}
+
+.footer-logo img {
+    display: block;
+
+    width: 125px;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 36px;
+
+    object-fit: contain;
+    object-position: left center;
 }
 
 .footer-brand p {
@@ -1135,6 +1161,9 @@ select {
 
     letter-spacing: 0.02em;
 }
+
+
+/* Footer note */
 
 .footer-note {
     max-width: 550px;
@@ -1172,7 +1201,7 @@ a:focus-visible {
 
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
    ========================================================= */
 
 @media (max-width: 850px) {
@@ -1203,11 +1232,15 @@ a:focus-visible {
 
     .footer-inner {
         flex-direction: column;
+
         gap: 30px;
     }
-
 }
 
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -1216,19 +1249,30 @@ a:focus-visible {
     }
 
 
-    /* Header */
+    /* -----------------------------------------------------
+       Header
+       ----------------------------------------------------- */
 
     .header-inner {
         min-height: 70px;
     }
 
     .mixam-logo {
-        font-size: 2.1rem;
+        width: 120px;
+        height: 35px;
+    }
+
+    .mixam-logo img {
+        width: 120px;
+        max-height: 35px;
     }
 
     .header-tagline {
         font-size: 0.65rem;
     }
+
+
+    /* Navigation */
 
     .nav-inner {
         min-height: 44px;
@@ -1241,7 +1285,9 @@ a:focus-visible {
     }
 
 
-    /* Hero */
+    /* -----------------------------------------------------
+       Hero
+       ----------------------------------------------------- */
 
     .hero-inner {
         min-height: auto;
@@ -1255,7 +1301,8 @@ a:focus-visible {
     }
 
     .hero h1 {
-        font-size: clamp(2.7rem, 12vw, 4.1rem);
+        font-size:
+            clamp(2.7rem, 12vw, 4.1rem);
     }
 
     .hero-description {
@@ -1269,7 +1316,9 @@ a:focus-visible {
     }
 
 
-    /* Notice */
+    /* -----------------------------------------------------
+       Archive notice
+       ----------------------------------------------------- */
 
     .archive-notice-section {
         padding-top: 35px;
@@ -1282,7 +1331,9 @@ a:focus-visible {
     }
 
 
-    /* Articles */
+    /* -----------------------------------------------------
+       Articles
+       ----------------------------------------------------- */
 
     .articles {
         padding-top: 58px;
@@ -1316,7 +1367,9 @@ a:focus-visible {
     }
 
 
-    /* Article pages */
+    /* -----------------------------------------------------
+       Article pages
+       ----------------------------------------------------- */
 
     .article-page {
         padding-top: 50px;
@@ -1328,11 +1381,22 @@ a:focus-visible {
     }
 
 
-    /* Footer */
+    /* -----------------------------------------------------
+       Footer
+       ----------------------------------------------------- */
 
     .site-footer {
         padding-top: 42px;
         padding-bottom: 42px;
     }
 
+    .footer-logo {
+        width: 110px;
+        height: 32px;
+    }
+
+    .footer-logo img {
+        width: 110px;
+        max-height: 32px;
+    }
 }
